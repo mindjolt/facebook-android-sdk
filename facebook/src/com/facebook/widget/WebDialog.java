@@ -210,7 +210,7 @@ public class WebDialog extends Dialog {
 
         // First calculate the margins around the frame layout
         Pair<Integer, Integer> margins = getMargins();
-        contentFrameLayout.setPadding(margins.first, margins.second, margins.first, margins.second);
+//        contentFrameLayout.setPadding(margins.first, margins.second, margins.first, margins.second);
 
         /* Create the 'x' image, but don't add to the contentFrameLayout layout yet
          * at this point, we only need to know its drawable width and height

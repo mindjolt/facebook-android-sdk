@@ -247,8 +247,8 @@ public class WebDialog extends Dialog {
         /* Finally add the 'x' image to the contentFrameLayout layout and
         * add contentFrameLayout to the Dialog view
         */
-        contentFrameLayout.addView(crossImageView, new ViewGroup.LayoutParams(
-                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+//        contentFrameLayout.addView(crossImageView, new ViewGroup.LayoutParams(
+//                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
         setContentView(contentFrameLayout);
     }
@@ -291,7 +291,7 @@ public class WebDialog extends Dialog {
                 getScaledSize(height, metrics.density, NO_PADDING_SCREEN_HEIGHT, MAX_PADDING_SCREEN_HEIGHT),
                 metrics.heightPixels);
 
-        getWindow().setLayout(dialogWidth, dialogHeight);
+//        getWindow().setLayout(dialogWidth, dialogHeight);
     }
 
     /**
@@ -391,7 +391,7 @@ public class WebDialog extends Dialog {
         webView.getSettings().setSavePassword(false);
         webView.getSettings().setSaveFormData(false);
 
-        webViewContainer.setPadding(margin, margin, margin, margin);
+//        webViewContainer.setPadding(margin, margin, margin, margin);
         webViewContainer.addView(webView);
         webViewContainer.setBackgroundColor(BACKGROUND_GRAY);
         contentFrameLayout.addView(webViewContainer);
